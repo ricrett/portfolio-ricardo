@@ -1,7 +1,7 @@
 (() => {
   'use strict';
 
-  const form = document.getElementById('formCadastro');
+  const form = document.getElementById('form-contato');
 
   form.addEventListener('submit', (event) => {
     const email = document.getElementById('email');

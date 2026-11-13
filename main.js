@@ -41,7 +41,7 @@
       const cliente = {
         nome: document.getElementById('nome').value,
         email: email.value,
-        telefone: document.getElementById('telefone').value,
+        telefone: telefone.value,
         observacoes: document.getElementById('observacoes').value
       };
 

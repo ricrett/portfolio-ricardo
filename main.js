@@ -29,7 +29,7 @@
       const cliente = {
         nome: document.getElementById('nome').value,
         email: email.value,
-        telefone: telefone.value,
+        telefone: document.getElementById('telefone').value,
         observacoes: document.getElementById('observacoes').value
       };
 

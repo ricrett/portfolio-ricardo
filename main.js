@@ -1,7 +1,7 @@
 (() => {
   'use strict';
 
-  const form = document.getElementById('form-contato');
+  const form = document.getElementById('formcontato');
 
   form.addEventListener('submit', (event) => {
     const email = document.getElementById('email');
@@ -19,18 +19,6 @@
     } else {
       email.classList.remove('is-invalid');
     }
-
-    function validarTelefone(telefone) {
-      const regex = /^(?:(?:\+|00)?(55)\s?)?(?:\(?([1-9][0-9])\)?\s?)?(?:((?:9\d|[2-9])\d{3})\-?(\d{4}))$/;
-      return regexTelefone.test(telefone);
-    }
-
-    if (!validarTelefone(telefone.value)) {
-      email.classList.add('is-invalid');
-      valido = false;
-    } else {
-      email.classList.remove('is-invalid');
-    }    
 
     if (!form.checkValidity() || !valido) {
       event.preventDefault();

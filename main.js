@@ -5,7 +5,6 @@
 
   form.addEventListener('submit', (event) => {
     const email = document.getElementById('email');
-    const telefone = document.getElementById('telefone')
     let valido = true;
 
     function validarEmail(email) {
